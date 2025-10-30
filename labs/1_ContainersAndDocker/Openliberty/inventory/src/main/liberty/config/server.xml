@@ -1,0 +1,23 @@
+<server description="Sample Liberty server">
+
+  <featureManager>
+    <platform>jakartaee-10.0</platform>
+    <platform>microprofile-7.0</platform>
+    <feature>restfulWS</feature>
+    <feature>jsonb</feature>
+    <feature>jsonp</feature>
+    <feature>cdi</feature>
+    <feature>mpConfig</feature>
+  </featureManager>
+
+  <variable name="http.port" defaultValue="9081" />
+  <variable name="https.port" defaultValue="9444" />
+
+  <httpEndpoint httpPort="${http.port}" httpsPort="${https.port}"
+      id="defaultHttpEndpoint" host="*" />
+
+  <webApplication location="guide-containerize-inventory.war" contextRoot="/">
+
+  </webApplication>
+
+</server>

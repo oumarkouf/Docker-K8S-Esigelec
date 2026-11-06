@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 lab-docker/1_ContainersAndDocker/package-lock.json
 lab-docker/1_ContainersAndDocker/node_modules
+lab-kubernetes/todo-backend/package-lock.json

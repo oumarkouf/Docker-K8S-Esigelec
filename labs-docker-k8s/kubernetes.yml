@@ -6,7 +6,7 @@ metadata:
   labels:
   # end::labels1[]
     # tag::app1[]
-    app: system
+    app: system-1
     # end::app1[]
 spec:
   selector:
@@ -144,6 +144,7 @@ spec:
   selector:
     # tag::app7[]
     app: system
+    env : prod
     # end::app7[]
   ports:
   - protocol: TCP
